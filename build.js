@@ -39,6 +39,12 @@ function processMarkdownFile(filePath) {
   const relativePath = path.relative(contentDir, filePath);
   const outputPath = path.join(publicDir, relativePath.replace(".md", ".html"));
 
+  // Skip index.html as it's managed directly
+  if (outputPath.endsWith("index.html")) {
+    console.log("Skipping index.html as it's managed directly");
+    return;
+  }
+
   // Create output directory if it doesn't exist
   fs.ensureDirSync(path.dirname(outputPath));
 

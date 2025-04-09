@@ -6,8 +6,7 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 1.6;
   color: #333;
   max-width: 1200px;
@@ -17,57 +16,123 @@ body {
 
 /* Header and Navigation */
 header {
-  padding: 1rem 0;
-  border-bottom: 1px solid #eee;
-}
-
-nav ul {
-  list-style: none;
+  background-color: #fff;
+  padding: 20px 40px;
   display: flex;
-  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
 }
 
-nav a {
+nav {
+  display: flex;
+  justify-content: space-between; /* Separate logo and links */
+  width: 100%;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin-left: auto; /* Push links to the right */
+}
+
+.nav-links a {
   text-decoration: none;
   color: #333;
-  font-weight: 500;
+  font-size: 16px;
+  padding: 0 10px;
 }
 
-nav a:hover {
-  color: #007bff;
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.auth-buttons .login,
+.auth-buttons .signup {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.auth-buttons .signup {
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
 }
 
 /* Main Content */
 main {
-  padding: 2rem 0;
-  min-height: 70vh;
+  text-align: center;
+  padding: 50px 20px;
 }
 
-/* Typography */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-bottom: 1rem;
-  line-height: 1.2;
+main h1 {
+  font-size: 32px;
+  color: #000;
+  margin-bottom: 10px;
 }
 
-h1 {
-  font-size: 2.5rem;
+main h1 .highlight {
+  display: block;
+  font-size: 64px;
+  color: #1a73e8;
 }
 
-p {
-  margin-bottom: 1rem;
+main .subheading {
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+main .subheading .highlight-alt {
+  color: #ff4081;
+}
+
+main p {
+  font-size: 18px;
+  color: #666;
+}
+
+.cta-button {
+  background-color: #000;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  margin: 20px auto;
+  display: block;
+}
+
+.cta-button:hover {
+  background-color: #333;
+}
+
+/* Additional Info */
+.additional-info h2 {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin-top: 40px;
 }
 
 /* Footer */
 footer {
-  padding: 2rem 0;
-  border-top: 1px solid #eee;
   text-align: center;
-  color: #666;
+  padding: 20px;
+  background-color: #f5f5f5;
+  color: #333;
+  margin-top: 40px;
 }
 
 /* Responsive Design */
